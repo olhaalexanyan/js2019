@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script>
+var name = prompt("Ваше имя?");
+	if (name != "" ){
+  		alert( 'Приятно познакомиться!!!!' );
+	} else {
+  		alert( 'Незнакомец' );
+	};
+ 		var age = prompt("Привет, "+name+". Сколько тебе лет?");
+ 		if (age === "") {
+  			alert('Тебе хоть есть 18?')
+ 		} else if (age < 18) {
+  			alert('Рановато тебе сюда')	
+ 		} else {
+  			alert('Добро пожаловать')
+ 		};
+ 			var town = prompt(name+', в коком городе ты живешь?');
+	 		if(town != ""){
+	 			alert("Крутое место")
+	 		}else{
+	 			alert("Ты сама скрытность")
+	 		};
+	 			var pappi = prompt(name+" из "+town+"a, а у тебя есть домашний питомец?");
+	 			if(pappi === "да"){
+	 		   		var name_pappi = prompt ("А как зовут это чудо");
+	 		    	if(name_pappi != ""){
+	 		    		alert("Крутое имя")
+	 		    	}else{
+	 		    		alert("Тогда будет Стапашка")
+	 		    	};
+	 			} else if (pappi === "нет"){
+	 				alert('Жаль')
+	 			} else {
+	 			alert('Ну хватит секретов')
+ 				};
+ 		var rez;
+ 		if (pappi==="да"){
+ 			rez = document.write("Ну что же, "+name+" .Здорово что тебе уже целых "+age+" лет. Да и в городе "+town+" ты крутом живешь. И "+name_pappi+" у тебя крутой");
+ 		}else{rez = document.write("Ну что же, "+name+" .Здорово что тебе уже целых "+age+" лет. Да и в городе "+town+" ты крутом живешь. Но вот домашнего питомца у тебя нет и это печально");
+ 	};
+
+	</script>
+	
+</body>
+</html>
